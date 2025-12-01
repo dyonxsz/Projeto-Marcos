@@ -8,26 +8,8 @@ export default function Login() {
     e.preventDefault()
     console.log('Formulário submetido')
   }
-  // No topo do return, antes do <main>
-<Link href="/notifications" style={{
-  position: 'absolute',
-  top: '20px',
-  right: '20px',
-  background: '#DDDBCE',
-  border: '1px solid #000',
-  borderRadius: '8px',
-  padding: '10px',
-  textDecoration: 'none',
-  color: '#666',
-  fontWeight: '600'
-}}>
-  🔔 Notificações
- //teste
-
-</Link>
 
   return (
-    
     <main className={styles.container}>
       <form onSubmit={handleSubmit}>
         <img 
