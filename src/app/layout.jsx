@@ -1,6 +1,8 @@
-// src/app/layout.js
+import './globals.css'
+
 export const metadata = {
-  title: 'NutriSense',
+  title: 'Login - Nutrisense',
+  description: 'Nutrisense, o seu guia inteligente para uma alimentação equilibrada!',
 }
 
 export default function RootLayout({ children }) {
