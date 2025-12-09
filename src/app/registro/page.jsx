@@ -167,6 +167,18 @@ export default function CadastroUsuario() {
       });
       setErrors({});
       
+      // 🔴 REDIRECIONAMENTO PARA LOGIN APÓS CADASTRO BEM-SUCEDIDO
+      // Se estiver usando Next.js com App Router:
+      window.location.href = '/login';
+      
+      // Se estiver usando páginas HTML simples, troque por:
+      // window.location.href = 'login.html';
+      
+      // Se estiver usando React Router:
+      // import { useNavigate } from 'react-router-dom';
+      // const navigate = useNavigate();
+      // navigate('/login');
+      
     } catch (error) {
       alert('Erro ao cadastrar. Tente novamente.');
     }
@@ -703,7 +715,13 @@ export default function CadastroUsuario() {
                   {errors.termos && <span className="error-message"> {errors.termos}</span>}
                 </label>
 
-                <button type="submit" className="btn">Fazer cadastro agora</button>
+                {/* 🔴 BOTÃO COM REDIRECIONAMENTO PARA LOGIN */}
+                <button 
+                  type="submit" 
+                  className="btn"
+                >
+                  Fazer cadastro agora
+                </button>
               </form>
             </div>
           </div>

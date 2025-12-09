@@ -1,4 +1,4 @@
-﻿import './globals.css'
+﻿
 
 export const metadata = {
   title: 'NutriSense - Sua Saúde Inteligente',
