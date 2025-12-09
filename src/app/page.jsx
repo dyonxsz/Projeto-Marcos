@@ -100,7 +100,7 @@ export default function HomePage() {
         </div>
         
         <p className="text-sm opacity-80">
-          © 2025 NutriSense. Todos os direitos reservados.
+          © 2024 NutriSense. Todos os direitos reservados.
         </p>
         <p className="text-xs mt-2 opacity-70">
           Transformando vidas através da nutrição inteligente
